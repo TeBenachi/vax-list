@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>愛知県西尾市接種会場一覧</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="container text-center">
+      <h1 class="fs-1 fw-bold">Vaccine Finder</h1>
+      <p>愛知県西尾市接種会場一覧</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="intro mx-auto">
+        <p>予約受付まだ開始してませんが、ワクチン接種可能予定の西尾市内の医療機関リストです。<br>
+          情報は<a href="https://v-sys.mhlw.go.jp/search/list.html?id=232131&keyword=&vaccineMaker=pf&page=1">厚生労働省</a>のサイトに基づいてアップしています。</p>
+        <p>現在はワクチン接種を行っているのは西尾市旧吉良支所は6月21日に受付再開。<a href="https://www.city.nishio.aichi.jp/index.cfm/1,75153,130,803,html">詳細</a>はこちら。</p>
+
+          <div class="status-info">
+            <div class="d-inline p-3 bg-light text-dark">
+              <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-preparing.svg">予約準備中
+            </div>
+            <div class="d-inline p-3 bg-light text-dark">
+              <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-not-available.svg">予約不可能
+            </div>
+            <div class="d-inline p-3 bg-light text-dark">
+              <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-available.svg">予約可能
+            </div>
+          </div>
+
+          <p>Last updated: <span class="lastUpdated"></span></p>
+        
+      </div>
+      <div id="facilities" class="mt-4"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="gotoTopButton">
+      <button class="gototop" href="#pageTop" onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z" /></svg>
+      </button>
+    </div>
+
+    <div class="container mx-auto">
+      <div class="footer-links mx-auto">
+        <div class="d-inline p-3 bg-white text-dark">
+          <a href="https://github.com/TeBenachi/vax"><img class="octocat" src="img/Octocat.jpg">Github</a>
+        </div>
+        <div class="d-inline p-3 bg-white text-dark">
+          <a href="https://v-sys.mhlw.go.jp/terms.html">厚生労働省の利用規約</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="assets/app.js"></script>
+  <script src="js/gotoTop.js"></script>
+</body>
+</html>

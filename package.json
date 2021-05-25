@@ -1,0 +1,23 @@
+{
+  "name": "vax-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix --hot",
+    "prod": "mix --production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "laravel-mix-purgecss": "^6.0.0",
+    "puppeteer": "^9.1.1"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.19"
+  }
+}
