@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>愛知県西尾市接種会場一覧</title>
+  <title>愛知県西尾市内コロナワクチン接種機関</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104496810-1"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDD361PPP3"></script>
   <script>
@@ -23,41 +23,47 @@
   
   <header>
     <div class="container text-center">
-      <h1 class="fs-1 fw-bold">Vaccine Finder</h1>
-      <p>愛知県西尾市接種会場一覧</p>
+      <h1 class="fs-3 fw-bold">愛知県西尾市内コロナワクチン接種機関</h1>
     </div>
   </header>
 
   <main>
     <div class="container">
       <div class="intro mx-auto">
-        <p>ワクチン接種を予定している西尾市内の個別医療機関リストです。情報は<a href="https://v-sys.mhlw.go.jp/search/">厚生労働省</a>のサイトに基づいてアップしています。
-          </p>
-        <p><a href="https://www.city.nishio.aichi.jp/covid19/vaccine/1005615.html">集団接種予約受付</a>は<span class="text-danger">６月８日朝９時</span>から受付開始です。6月21日から7月11日までの9,720人分の予約が予定されています。詳しい情報は<a href="https://www.city.nishio.aichi.jp/covid19/vaccine/1005615.html">こちら</a>。</p>
+
+        <p>西尾市内にある<span class="fw-bold">ワクチン予約を受付中の個人病院</span>。<a href="https://v-sys.mhlw.go.jp/search/">厚生労働省</a>のデータに基づいて更新しています。
+        </p>
 
           <div class="d-flex flex-column  flex-md-row status-info">
-            <div class="p-3 bg-light text-dark">
+            <div class="p-2 bg-light text-dark">
               <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-preparing.svg">予約準備中
             </div>
-            <div class="p-3 bg-light text-dark">
+            <div class="p-2 bg-light text-dark">
               <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-not-available.svg">予約不可能
             </div>
-            <div class="p-3 bg-light text-dark">
+            <div class="p-2 bg-light text-dark">
               <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-available.svg">予約可能
             </div>
-            <div class="p-3 bg-light text-dark">
+            <div class="p-2 bg-light text-dark">
               <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-few.svg">若干空き有り
             </div>
           </div>
 
-          <p>* 毎日１、２回程リストを更新していますが、最新情報, 及び医療機関の詳しい情報は<a href="https://v-sys.mhlw.go.jp/search/">厚生労働省</a>のサイトにてご確認ください。</p>
+          <p class="svg-icon">次回の集団接種予約は<span class="fw-bold">６月８日</span>(9,720人分)。詳しい情報は<a href="https://www.city.nishio.aichi.jp/covid19/vaccine/1005615.html">こちら<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </p>
+
+          <p class="small">*毎日更新していますが、最新情報, 及び医療機関の詳細は<a href="https://v-sys.mhlw.go.jp/search/">厚生労働省</a>にてご確認ください。<br>
           
           <script>
             var date = document.lastModified;
             document.write("最終更新日時: "+date.toLocaleString( 'ja-JP'));
           </script>
-          <!-- Last updated 6/2 7:30PM -->
-        
+          <!-- Last updated 6/2 8:30PM -->
+        </p>
+
       </div>
       <div id="facilities" class="mt-4"></div>
     </div>

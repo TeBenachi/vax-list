@@ -45,6 +45,7 @@ header .container {
   font-size: 95%;
 }
 
+
 .card {
   margin: var(--card-spacing);
   padding: 0.5rem 1rem;
@@ -108,4 +109,17 @@ button.gototop svg {
 img.octocat {
   width: 34px;
   height: 34px;
+}
+
+p.small {
+  font-size: 14px;
+}
+
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  vertical-align: -0.1em;
+  font-size: inherit;
+  color: inherit;
 }
