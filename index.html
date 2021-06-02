@@ -15,8 +15,8 @@
     gtag('config', 'G-KDD361PPP3');
   </script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">  -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -54,10 +54,9 @@
           
           <script>
             var date = document.lastModified;
-            document.write("最終更新日時: "+date);
-         </script>
-
-         <!-- Last updated 6/2 8:25AM -->
+            document.write("最終更新日時: "+date.toLocaleString( 'ja-JP'));
+          </script>
+          <!-- Last updated 6/2 -->
         
       </div>
       <div id="facilities" class="mt-4"></div>
