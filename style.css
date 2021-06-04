@@ -12,6 +12,7 @@ body {
   color: #3d3935;
   letter-spacing: 0.2px;
   line-height: 1.75;
+  font-size: 15px;
 }
 
 a {
@@ -28,6 +29,7 @@ a:focus {
 h1, h2, h3, h4, h5, h6 {
   color: #1E3932;
 }
+
 .container {
   padding: var(--container-spacing);
   max-width: 830px;
@@ -45,30 +47,51 @@ header .container {
   font-size: 95%;
 }
 
+.intro ul li {
+  font-size: 15px;
+  line-height: 1.75;
+}
 
 .card {
   margin: var(--card-spacing);
   padding: 0.5rem 1rem;
 }
 
+.card-body {
+  padding: 0.25rem 1rem;
+}
+
+.addr {
+  font-size: 14px;;
+}
+
+.vax-maker {
+  font-size: 13px;
+  background-color: #e5e9f0;
+  padding: 0.25rem 0.5rem;
+}
+
 .status-marker {
-  width: 80px;
-  margin-bottom: 1rem;
+  width: 50px;
+  /* margin-bottom: 1rem; */
+ padding-top: 0.2rem;
+ align-items: center;
 }
 
 .status-marker img {
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
 }
 
-.grey h3, .grey p {
+.grey h3, .grey span {
   color: #b8b7b9;
 }
 
 .status-info {
-  margin: 2rem 0;
+  margin: 2rem 0 0.5rem 0;
   font-size: 90%;
 }
+
 .status-info img {
   width: 15px;
   height: 15px;
