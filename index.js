@@ -17,14 +17,25 @@ const puppeteer = require("puppeteer");
         await page.goto(url);
         await page.waitForSelector( '.m-searchlist-item' );
 
-        const partnersOnPage = await page.evaluate(() =>
+        const partnersOnPage = await page.evaluate(() => 
+
           Array.from(document.querySelectorAll(".m-searchlist-item")).map(compact => ({
+
             title:   compact.querySelector("h3").innerText.trim(),
             address: compact.querySelector(".m-searchlist-item__address").innerText.trim(),
-            //phone:   compact.querySelector(".m-searchlist-item__body__inner").innerText.trim(),
+
+            phone:   compact.querySelector(".m-searchlist-item__body__inner .d-md-inline") && compact.querySelector(".m-searchlist-item__body__inner .d-md-inline").innerText,
+
+            notice:   compact.querySelector(".m-searchlist-item__body__inner .m-searchlist-item__notice") && compact.querySelector(".m-searchlist-item__body__inner .m-searchlist-item__notice").innerText.trim(),
+
+            apptTime: compact.querySelector(".m-searchlist-item__reservation__tel p.mb-0") && compact.querySelector(".m-searchlist-item__reservation__tel p.mb-0").innerText.trim(),
+            
             maker:   compact.querySelector(".m-searchlist-item__data__maker").innerText.trim(),
+            updated: compact.querySelector(".flex-md-row-reverse .col-md-6.text-md-right").innerText.trim(),
             status:  compact.querySelector("p.mb-0 img.m-text-5xl").src
+
           }))
+          
         );
         await page.close();
 
