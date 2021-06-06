@@ -100,8 +100,25 @@
       </div>
     </div>
   </footer>
+
+
   
   <script src="assets/app.js"></script>
   <script src="js/gotoTop.js"></script>
+
+  <script>
+
+window.addEventListener('load', (event) => {
+  
+  document.querySelectorAll('.vax-phone').forEach((el, index) => {
+    if (el.innerText.includes(0)) {
+        el.innerText = el.innerText.replace(/^(\d{4})/, '($1) ');
+    }
+  });
+
+  })
+
+  </script>
+
 </body>
 </html>

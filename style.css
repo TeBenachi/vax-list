@@ -87,6 +87,10 @@ header .container {
   color: #b8b7b9;
 }
 
+.vax-phone {
+  padding-right: 1rem;
+}
+
 .status-info {
   margin: 2rem 0 0.5rem 0;
   font-size: 90%;
@@ -97,7 +101,6 @@ header .container {
   height: 15px;
   margin: 0.5rem;
 }
-
 
 button.gototop svg {
   width: 30px;
