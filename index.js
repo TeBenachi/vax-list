@@ -24,9 +24,9 @@ const puppeteer = require("puppeteer");
             title:   compact.querySelector("h3").innerText.trim(),
             address: compact.querySelector(".m-searchlist-item__address").innerText.trim(),
 
-            phone:   compact.querySelector(".m-searchlist-item__body__inner .d-md-inline") && compact.querySelector(".m-searchlist-item__body__inner .d-md-inline").innerText,
+            phone:   compact.querySelector(".m-searchlist-item__body__inner .d-md-inline") && compact.querySelector(".m-searchlist-item__body__inner .d-md-inline").innerHTML,
 
-            notice:   compact.querySelector(".m-searchlist-item__body__inner .m-searchlist-item__notice") && compact.querySelector(".m-searchlist-item__body__inner .m-searchlist-item__notice").innerText.trim(),
+            notice:   compact.querySelector(".m-searchlist-item__body__inner .m-searchlist-item__notice") && compact.querySelector(".m-searchlist-item__body__inner .m-searchlist-item__notice").innerHTML,
 
             apptTime: compact.querySelector(".m-searchlist-item__reservation__tel p.mb-0") && compact.querySelector(".m-searchlist-item__reservation__tel p.mb-0").innerText.trim(),
             
