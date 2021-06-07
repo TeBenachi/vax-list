@@ -8,7 +8,9 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif; 
+  font-family: 'arial', ,  "游ゴシック体", "Yu Gothic", YuGothic, 
+  "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+  "メイリオ", "Meiryo"; 
   color: #3d3935;
   letter-spacing: 0.2px;
   line-height: 1.75;
