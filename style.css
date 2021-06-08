@@ -46,11 +46,11 @@ header .container {
 }
 
 .intro p {
-  font-size: 95%;
+  font-size: inherit;
 }
 
 .intro ul li {
-  font-size: 15px;
+  font-size: inherit;
   line-height: 1.75;
 }
 
@@ -64,7 +64,7 @@ header .container {
 }
 
 .addr {
-  font-size: 14px;
+  font-size: inherit;
 }
 
 .vax-maker {
@@ -147,7 +147,7 @@ img.octocat {
 }
 
 p.small {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .icon {
