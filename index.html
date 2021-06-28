@@ -27,7 +27,6 @@
   
   <header>
     <div class="container text-center">
-      <span class="small">全ての高齢者がコロナワクチン打てるまで！</span>
       <h1 class="fs-4 fw-bold">西尾市ロコナワクチン予約受付中の病院</h1>
     </div>
   </header>
@@ -36,45 +35,41 @@
     <div class="container">
       <div class="intro mx-auto">
 
-        <p>西尾市内にある<span class="fw-bold">ワクチン予約受付中の個人病院</span>です。各機関により予約方法が違いますので、詳細は下の各備考をご覧ください。<a href="https://v-sys.mhlw.go.jp/search/" target="_blank">厚生労働省</a>のデータに基づいて更新しています。
+        <p>西尾市内にある<span class="fw-bold">ワクチン予約受付中の個人病院</span>です。<br>各機関により予約方法が違いますので、詳細は下の各備考をご覧ください。<a href="https://v-sys.mhlw.go.jp/search/" target="_blank">厚生労働省</a>のデータに基づいて更新しています。
+
+          (<script>
+            var date = document.lastModified;
+            document.write("最終更新日時: "+date.toLocaleString( 'ja-JP'));
+          </script>)
+          <!-- Updated 6/28 -->
+
         </p>
 
-        <p class="mb-0">次回の西尾市集団接種予約は<strong>７月２１日</strong>に開始します。予約枠は10,716人分。詳しい情報は<a href="https://www.city.nishio.aichi.jp/covid19/vaccine/1005615.html">こちら</a>。</p>
-
-          <div class="status-info mb-4">
-            <div class="row row-cols-3 bg-light text-dark small">
-
-              <div class="col-md-2 p-1">
-                <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-available.svg">予約可能
-              </div>
-              <div class="col-md-2 p-1">
-                <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-few.svg">若干空き有
-              </div>
-              <div class="col-md-2 p-1">
-                <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-preparing.svg">予約準備中
-              </div>
-              <div class="col-md-2 p-1">
-                <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-not-available.svg">予約不可能
-              </div>
-              <div class="col-md-2 p-1">
-                <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-reservation-not-required.svg">予約不要 
-              </div>
-
-            </div>
-          </div>
-
-          <p class="small">
-            
-            <script>
-              var date = document.lastModified;
-              document.write("最終更新日時: "+date.toLocaleString( 'ja-JP'));
-            </script>
-            <!-- Updated 6/28 -->
-            <br>
-            最新情報は<a href="https://v-sys.mhlw.go.jp/search/" target="_blank">厚生労働省</a>でご確認ください。
+        <p class="mb-0">&sdot; 次回の西尾市集団接種予約は7/21に開始します。予約枠は10,716人分。詳しい情報は<a href="https://www.city.nishio.aichi.jp/covid19/vaccine/1005615.html">こちら</a>。</p>
         
-        </p>
+        <p>&sdot; 藤田医科大学岡崎医療センターでのWeb予約は終了。詳しくは<a href="https://www.city.nishio.aichi.jp/covid19/vaccine/1005891.html">こちら</a>。</p>
 
+        <div class="status-info mb-4">
+          <div class="row row-cols-3 bg-light text-dark small">
+
+            <div class="col-md-2 p-1">
+              <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-available.svg">予約可能
+            </div>
+            <div class="col-md-2 p-1">
+              <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-few.svg">若干空き有
+            </div>
+            <div class="col-md-2 p-1">
+              <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-preparing.svg">予約準備中
+            </div>
+            <div class="col-md-2 p-1">
+              <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-not-available.svg">予約不可能
+            </div>
+            <div class="col-md-2 p-1">
+              <img src="https://v-sys.mhlw.go.jp/assets/images/icon/icon-reservation-status-reservation-not-required.svg">予約不要 
+            </div>
+
+          </div>
+        </div>
       </div>
       <div id="facilities" class="mt-4"></div>
     </div>
